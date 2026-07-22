@@ -21,8 +21,8 @@ const YoutubeIcon = ({ size = 18 }) => (
     <path d="m10 15 5-3-5-3z"/>
   </svg>
 );
-import SalonInteriorImg from '../assets/home/salon_interior.png';
-import OfferModelImg from '../assets/home/offer_model.png';
+import SalonInteriorImg from '../assets/home/salon_interior.webp';
+import OfferModelImg from '../assets/home/offer_model.webp';
 import AppointmentModal from '../components/ui/AppointmentModal';
 
 export default function Contact() {

@@ -9,7 +9,7 @@ import FaceCleansingImage from "../assets/home/face-cleansing.webp";
 import BodyMassageImage from "../assets/home/body-massage.webp";
 import HairStylingImage from "../assets/home/hair-styling.webp";
 import GlowImage from "../assets/home/glow.webp";
-import OfferModelImg from "../assets/home/offer_model.png";
+import OfferModelImg from "../assets/home/offer_model.webp";
 
 const CATEGORIES = ["ALL", "HAIR", "SKIN", "BRIDAL", "SPA"];
 

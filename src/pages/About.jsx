@@ -12,8 +12,8 @@ import {
   Clock,
 } from "lucide-react";
 import BottomCTA from "../components/layout/BottomCTA";
-import SalonInteriorImg from "../assets/home/salon_interior.png";
-import OfferModelImg from "../assets/home/offer_model.png";
+import SalonInteriorImg from "../assets/home/salon_interior.webp";
+import OfferModelImg from "../assets/home/offer_model.webp";
 import AboutVideo from "../assets/videos/about-us.webm";
 import Team1 from "../assets/about-us/team1.webp";
 import Team2 from "../assets/about-us/team2.webp";

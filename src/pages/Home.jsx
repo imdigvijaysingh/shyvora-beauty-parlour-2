@@ -17,10 +17,10 @@ import {
 import AppointmentModal from "../components/ui/AppointmentModal";
 
 // Assets
-import HeroModelImg from "../assets/hero_model.png";
-import HeroModelMobileImg from "../assets/hero_model-mobile.png";
-import OfferModelImg from "../assets/home/offer_model.png";
-import SalonInteriorImg from "../assets/home/salon_interior.png";
+import HeroModelImg from "../assets/hero_model.webp";
+import HeroModelMobileImg from "../assets/hero_model-mobile.webp";
+import OfferModelImg from "../assets/home/offer_model.webp";
+import SalonInteriorImg from "../assets/home/salon_interior.webp";
 import BridalMakeupImage from "../assets/home/bridal-makeup.webp";
 import FaceCleansingImage from "../assets/home/face-cleansing.webp";
 import BodyMassageImage from "../assets/home/body-massage.webp";

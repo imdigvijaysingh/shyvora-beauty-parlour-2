@@ -21,14 +21,14 @@ import AppointmentModal from "../components/ui/AppointmentModal";
 import BottomCTA from "../components/layout/BottomCTA";
 
 // Assets
-import HairCutImg from "../assets/home/hair_cut_styling.png";
-import FacialTreatmentImg from "../assets/home/facial_treatment.png";
+import HairCutImg from "../assets/home/hair_cut_styling.webp";
+import FacialTreatmentImg from "../assets/home/facial_treatment.webp";
 import HairStylingImg from "../assets/home/hair-styling.webp";
 import FaceCleansingImg from "../assets/home/face-cleansing.webp";
 import BridalMakeupImg from "../assets/home/bridal-makeup.webp";
 import BodyMassageImg from "../assets/home/body-massage.webp";
 import GlowImg from "../assets/home/glow.webp";
-import OfferModelImg from "../assets/home/offer_model.png";
+import OfferModelImg from "../assets/home/offer_model.webp";
 
 // 1. CATEGORY TABS
 const CATEGORIES = [
