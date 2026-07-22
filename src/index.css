@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-terracotta: #C87D65;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[#FDFBF7] text-[#3A3331] font-sans overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-[#2A2321];
+  }
+}
+
+.font-script {
+  font-family: 'Alex Brush', 'Great Vibes', cursive;
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+}
+
+@layer components {
+  .fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+    opacity: 0;
+  }
+  
+  .slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
