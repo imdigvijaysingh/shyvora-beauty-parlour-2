@@ -39,7 +39,43 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [progress, setProgress] = useState(0);
   const location = useLocation();
+
+  useEffect(() => {
+    setIsLoading(true);
+    setProgress(15);
+
+    const interval = setInterval(() => {
+      setProgress((prev) => {
+        if (prev >= 90) return prev;
+        return prev + Math.random() * 15;
+      });
+    }, 100);
+
+    const completeLoading = () => {
+      setProgress(100);
+      setTimeout(() => {
+        setIsLoading(false);
+        setTimeout(() => setProgress(0), 300);
+      }, 300);
+    };
+
+    if (document.readyState === "complete") {
+      const timeout = setTimeout(completeLoading, 400); // 0.4s to match delay + visual completion
+      return () => {
+        clearInterval(interval);
+        clearTimeout(timeout);
+      };
+    } else {
+      window.addEventListener("load", completeLoading);
+      return () => {
+        clearInterval(interval);
+        window.removeEventListener("load", completeLoading);
+      };
+    }
+  }, [location.pathname]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -267,6 +303,14 @@ export default function Navbar() {
             </div>
           )}
         </nav>
+        
+        {/* Loading Indicator */}
+        <div 
+          className={`absolute bottom-0 left-0 h-[2px] bg-[#C87D65] shadow-[0_0_12px_2px_rgba(200,125,101,0.8)] z-50 transition-all ease-out ${
+            isLoading ? 'opacity-100 duration-200' : 'opacity-0 duration-500'
+          }`}
+          style={{ width: `${progress}%` }}
+        />
       </header>
 
       <AppointmentModal
